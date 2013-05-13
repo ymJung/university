@@ -1,0 +1,80 @@
+/*
+ * helloworld_client_win.c
+ * Written by SW. YOON
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <winsock2.h>
+#define BUF_SIZE 1024
+
+void ErrorHandling(char *message);
+
+int main(int argc, char **argv)
+{
+	WSADATA wsaData;
+	SOCKET hSocket;
+	char message[BUF_SIZE];
+	int str_len,recv_cnt;
+	int recv_len =0;
+
+	SOCKADDR_IN servAddr;
+	char move[4]={8,4,6,2};
+
+
+
+	if(argc!=3){
+		printf("Usage : %s <IP> <port>\n", argv[0]);
+		exit(1);
+	}
+
+	if(WSAStartup(MAKEWORD(2, 2), &wsaData) != 0) /* Load WinhSocket 2.2 DLL */
+		ErrorHandling("WSAStartup() error!");  
+	
+	hSocket=socket(PF_INET, SOCK_STREAM, 0); /* 서버 접속을 위한 소켓 생성 */
+	if(hSocket==INVALID_SOCKET)
+		ErrorHandling("hSocketet() error");
+	
+	memset(&servAddr, 0, sizeof(servAddr));
+	servAddr.sin_family=AF_INET;
+	servAddr.sin_addr.s_addr=inet_addr(argv[1]);
+	servAddr.sin_port=htons(atoi(argv[2]));
+	
+	if( connect(hSocket, (SOCKADDR*)&servAddr, sizeof(servAddr))==SOCKET_ERROR ) /* 서버로 연결 요청 */
+		ErrorHandling("connect() error!");
+	else
+		puts("Connected...");
+
+	
+	while(1)
+	{
+		fputs("Input message(Q to quit): ",stdout);
+		fgets(message,BUF_SIZE,stdin);
+		if(!strcmp(message,"q\n")||!strcmp(message,"Q\n"))
+			break;
+		str_len=write(hSocket,message,strlen(message));
+		recv_len=0;
+
+		while(recv_len<str_len){
+			str_len=recv(hSocket, message, &message[recv_len], BUF_SIZE-1); /* 데이터 수신 */
+			if(recv_cnt ==-1)
+				ErrorHandling("read() error!");
+			recv_len+=recv_cnt;
+		}
+			
+		printf("Message from server : %s \n", message);
+		
+	}
+	
+	closesocket(hSocket); /* 연결 종료 */
+	WSACleanup();
+	return 0;
+}
+
+void ErrorHandling(int *message)
+{
+	fputs(message, stderr);
+	
+	exit(1);
+}

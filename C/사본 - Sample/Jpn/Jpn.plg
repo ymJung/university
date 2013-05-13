@@ -1,0 +1,106 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Sample - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x412 /fo"Release/Sample.res" /d "NDEBUG" /d "_AFXDLL" "C:\Program Files\Microsoft Visual Studio\MyProjects\Sample\Sample.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP145.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/Sample.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Program Files\Microsoft Visual Studio\MyProjects\Sample\Sample.cpp"
+"C:\Program Files\Microsoft Visual Studio\MyProjects\Sample\SampleDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP145.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP146.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/Sample.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Program Files\Microsoft Visual Studio\MyProjects\Sample\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP146.tmp" 
+Creating command line "link.exe /nologo /subsystem:windows /incremental:no /pdb:"Release/Sample.pdb" /machine:I386 /out:"Release/Sample.exe"  ".\Release\Sample.obj" ".\Release\SampleDlg.obj" ".\Release\StdAfx.obj" ".\Release\Sample.res" "
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+Sample.cpp
+SampleDlg.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+Sample.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: Kor - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x412 /fo"Release/Kor.res" /d "NDEBUG" "C:\Program Files\Microsoft Visual Studio\MyProjects\Sample\Kor\Kor.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP148.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_MBCS" /D "_USRDLL" /Fp"Release/Kor.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Program Files\Microsoft Visual Studio\MyProjects\Sample\Kor\Kor.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP148.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP149.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_MBCS" /D "_USRDLL" /Fp"Release/Kor.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Program Files\Microsoft Visual Studio\MyProjects\Sample\Kor\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP149.tmp" 
+Creating command line "link.exe /nologo /subsystem:windows /dll /incremental:no /pdb:"Release/Kor.pdb" /machine:I386 /def:".\Kor.def" /out:"Release/Kor.dll" /implib:"Release/Kor.lib"  ".\Release\Kor.obj" ".\Release\StdAfx.obj" ".\Release\Kor.res" "
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+Kor.cpp
+Linking...
+   Creating library Release/Kor.lib and object Release/Kor.exp
+LINK : warning LNK4089: all references to "SHELL32.dll" discarded by /OPT:REF
+LINK : warning LNK4089: all references to "comdlg32.dll" discarded by /OPT:REF
+
+
+
+<h3>Results</h3>
+Kor.dll - 0 error(s), 2 warning(s)
+<h3>
+--------------------Configuration: Jpn - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x412 /fo"Release/Jpn.res" /d "NDEBUG" "C:\Program Files\Microsoft Visual Studio\MyProjects\Sample\Jpn\Jpn.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP14D.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_MBCS" /D "_USRDLL" /Fp"Release/Jpn.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Program Files\Microsoft Visual Studio\MyProjects\Sample\Jpn\Jpn.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP14D.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP14E.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_MBCS" /D "_USRDLL" /Fp"Release/Jpn.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Program Files\Microsoft Visual Studio\MyProjects\Sample\Jpn\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP14E.tmp" 
+Creating command line "link.exe /nologo /subsystem:windows /dll /incremental:no /pdb:"Release/Jpn.pdb" /machine:I386 /def:".\Jpn.def" /out:"Release/Jpn.dll" /implib:"Release/Jpn.lib"  ".\Release\Jpn.obj" ".\Release\StdAfx.obj" ".\Release\Jpn.res" "
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+Jpn.cpp
+Linking...
+   Creating library Release/Jpn.lib and object Release/Jpn.exp
+LINK : warning LNK4089: all references to "SHELL32.dll" discarded by /OPT:REF
+LINK : warning LNK4089: all references to "comdlg32.dll" discarded by /OPT:REF
+
+
+
+<h3>Results</h3>
+Jpn.dll - 0 error(s), 2 warning(s)
+</pre>
+</body>
+</html>

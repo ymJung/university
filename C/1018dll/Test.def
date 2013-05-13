@@ -1,0 +1,9 @@
+LIBRARY MakeDLL
+
+// DLL상 Export Address Table에
+// 함수의 위치를 나타내도록 정의
+// 형식 : EXPORTS 함수명 @서 수 순서
+EXPORTS Sum @1
+EXPORTS Sub @2
+EXPORTS Mul @3
+EXPORTS Div @4

@@ -1,0 +1,80 @@
+/*
+ * helloworld_client_win.c
+ * Written by SW. YOON
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <winsock2.h>
+#define BUF_SIZE 1024
+#define OPSZ 4
+#define RLT_SIZE 4
+
+void ErrorHandling(char *message);
+
+int main(int argc, char **argv)
+{
+	WSADATA wsaData;
+	SOCKET hSocket;
+	char message[BUF_SIZE];
+	int str_len,recv_cnt;
+	int recv_len =0;
+	char opmsg[BUF_SIZE];
+	int result,opnd_cnt,i;
+	
+
+	SOCKADDR_IN servAddr;
+	char move[4]={8,4,6,2};
+
+
+
+	if(argc!=3){
+		printf("Usage : %s <IP> <port>\n", argv[0]);
+		exit(1);
+	}
+
+	if(WSAStartup(MAKEWORD(2, 2), &wsaData) != 0) /* Load WinhSocket 2.2 DLL */
+		ErrorHandling("WSAStartup() error!");  
+	
+	hSocket=socket(PF_INET, SOCK_STREAM, 0); /* 서버 접속을 위한 소켓 생성 */
+	if(hSocket==INVALID_SOCKET)
+		ErrorHandling("hSocketet() error");
+	
+	memset(&servAddr, 0, sizeof(servAddr));
+	servAddr.sin_family=AF_INET;
+	servAddr.sin_addr.s_addr=inet_addr(argv[1]);
+	servAddr.sin_port=htons(atoi(argv[2]));
+	
+	if( connect(hSocket, (SOCKADDR*)&servAddr, sizeof(servAddr))==SOCKET_ERROR ) /* 서버로 연결 요청 */
+		ErrorHandling("connect() error!");
+	else
+		puts("Connected...");
+
+	
+	fputs("count: ",stdout);
+	scanf("%d", &opnd_cnt);
+	opmsg[0]=(char)opnd_cnt;
+
+	for(i=0;i<opnd_cnt; i++){
+		printf("Operand %d:",i+1);
+		scanf("%d",(int*)&opmsg[i*OPSZ+1]);
+	}
+	fgetc(stdin);
+	fputs("Operator: ",stdout);
+	scanf("%c",&opmsg[opnd_cnt*OPSZ+1]);
+	write(hSocket,opmsg,opnd_cnt*OPSZ+2);
+	read(hSocket,&result,RLT_SIZE);
+
+	printf("Operatio result %d \n",result);
+	close(hSocket);
+	return 0;
+}
+
+
+void ErrorHandling(int *message)
+{
+	fputs(message, stderr);
+	
+	exit(1);
+}

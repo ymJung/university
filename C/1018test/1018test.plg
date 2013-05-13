@@ -1,0 +1,39 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: 1018test - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPFE.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Debug/1018test.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Program Files\Microsoft Visual Studio\MyProjects\1018test\test.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPFE.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP101.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/1018test.pdb" /debug /machine:I386 /out:"Debug/1018test.exe" /pdbtype:sept 
+".\Debug\test.obj"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP101.tmp"
+<h3>Output Window</h3>
+Compiling...
+test.cpp
+Linking...
+test.obj : error LNK2001: unresolved external symbol __imp__Div
+test.obj : error LNK2001: unresolved external symbol __imp__Mul
+test.obj : error LNK2001: unresolved external symbol __imp__Sub
+test.obj : error LNK2001: unresolved external symbol __imp__Sum
+LIBCD.lib(wincrt0.obj) : error LNK2001: unresolved external symbol _WinMain@16
+Debug/1018test.exe : fatal error LNK1120: 5 unresolved externals
+Error executing link.exe.
+
+
+
+<h3>Results</h3>
+1018test.exe - 6 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

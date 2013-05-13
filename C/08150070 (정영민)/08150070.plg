@@ -1,0 +1,43 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: 08150070 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPC.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/08150070.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Program Files\Microsoft Visual Studio\MyProjects\08150070 (Á¤¿µ¹Î)\08150070Doc.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPC.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPD.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/08150070.pdb" /debug /machine:I386 /out:"Debug/08150070.exe" /pdbtype:sept 
+".\Debug\08150070.obj"
+".\Debug\08150070Doc.obj"
+".\Debug\08150070View.obj"
+".\Debug\ChildFrm.obj"
+".\Debug\ConstantDlg.obj"
+".\Debug\DownSampleDlg.obj"
+".\Debug\MainFrm.obj"
+".\Debug\QuantizationDlg.obj"
+".\Debug\StdAfx.obj"
+".\Debug\StressTransformDlg.obj"
+".\Debug\UpSampleDlg.obj"
+".\Debug\08150070.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPD.tmp"
+<h3>Output Window</h3>
+Compiling...
+08150070Doc.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+08150070.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

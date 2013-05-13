@@ -1,0 +1,57 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: 날짜 및 시간 등록 정보 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x412 /fo"Debug/날짜 및 시간 등록 정보.res" /d "_DEBUG" /d "_AFXDLL" "C:\Program Files\Microsoft Visual Studio\MyProjects\날짜 및 시간 등록 정보\날짜 및 시간 등록 정보.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP4.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/날짜 및 시간 등록 정보.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Program Files\Microsoft Visual Studio\MyProjects\날짜 및 시간 등록 정보\날짜 및 시간 등록 정보.cpp"
+"C:\Program Files\Microsoft Visual Studio\MyProjects\날짜 및 시간 등록 정보\날짜 및 시간 등록 정보Dlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP4.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP5.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/날짜 및 시간 등록 정보.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Program Files\Microsoft Visual Studio\MyProjects\날짜 및 시간 등록 정보\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP5.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP6.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/날짜 및 시간 등록 정보.pdb" /debug /machine:I386 /out:"Debug/날짜 및 시간 등록 정보.exe" /pdbtype:sept 
+".\Debug\StdAfx.obj"
+".\Debug\날짜 및 시간 등록 정보.obj"
+".\Debug\날짜 및 시간 등록 정보Dlg.obj"
+".\Debug\날짜 및 시간 등록 정보.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP6.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+날짜 및 시간 등록 정보.cpp
+날짜 및 시간 등록 정보Dlg.cpp
+C:\Program Files\Microsoft Visual Studio\MyProjects\날짜 및 시간 등록 정보\날짜 및 시간 등록 정보Dlg.cpp(125) : error C2653: 'COleDataTime' : is not a class or namespace name
+C:\Program Files\Microsoft Visual Studio\MyProjects\날짜 및 시간 등록 정보\날짜 및 시간 등록 정보Dlg.cpp(125) : error C2593: 'operator =' is ambiguous
+C:\Program Files\Microsoft Visual Studio\MyProjects\날짜 및 시간 등록 정보\날짜 및 시간 등록 정보Dlg.cpp(190) : warning C4305: 'argument' : truncation from 'const int' to 'char'
+C:\Program Files\Microsoft Visual Studio\MyProjects\날짜 및 시간 등록 정보\날짜 및 시간 등록 정보Dlg.cpp(190) : warning C4309: 'argument' : truncation of constant value
+C:\Program Files\Microsoft Visual Studio\MyProjects\날짜 및 시간 등록 정보\날짜 및 시간 등록 정보Dlg.cpp(192) : error C2676: binary '++' : 'class CString' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\Program Files\Microsoft Visual Studio\MyProjects\날짜 및 시간 등록 정보\날짜 및 시간 등록 정보Dlg.cpp(196) : warning C4305: 'argument' : truncation from 'const int' to 'char'
+C:\Program Files\Microsoft Visual Studio\MyProjects\날짜 및 시간 등록 정보\날짜 및 시간 등록 정보Dlg.cpp(196) : warning C4309: 'argument' : truncation of constant value
+C:\Program Files\Microsoft Visual Studio\MyProjects\날짜 및 시간 등록 정보\날짜 및 시간 등록 정보Dlg.cpp(198) : error C2676: binary '--' : 'class CString' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\Program Files\Microsoft Visual Studio\MyProjects\날짜 및 시간 등록 정보\날짜 및 시간 등록 정보Dlg.cpp(203) : error C2065: 'UPdateData' : undeclared identifier
+Generating Code...
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+날짜 및 시간 등록 정보.exe - 5 error(s), 4 warning(s)
+</pre>
+</body>
+</html>

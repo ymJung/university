@@ -1,0 +1,134 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: 64bitDES - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP6A.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/64bitDES.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ  /c 
+"C:\Program Files\Microsoft Visual Studio\MyProjects\64bitDES\des.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP6A.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP6D.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib  kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/64bitDES.pdb" /debug /machine:I386 /out:"Debug/64bitDES.exe" /pdbtype:sept 
+".\Debug\des.obj"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP6D.tmp"
+<h3>Output Window</h3>
+Compiling...
+des.cpp
+c:\program files\microsoft visual studio\myprojects\64bitdes\des.cpp(1) : error C2143: syntax error : missing ';' before '--'
+c:\program files\microsoft visual studio\vc98\include\stdio.h(36) : error C2143: syntax error : missing ';' before '{'
+c:\program files\microsoft visual studio\vc98\include\stdio.h(36) : error C2447: missing function header (old-style formal list?)
+c:\program files\microsoft visual studio\vc98\include\stdlib.h(225) : error C2143: syntax error : missing ';' before '*'
+c:\program files\microsoft visual studio\vc98\include\stdlib.h(225) : error C2501: '__wargv' : missing storage-class or type specifiers
+c:\program files\microsoft visual studio\vc98\include\stdlib.h(233) : error C2143: syntax error : missing ';' before '*'
+c:\program files\microsoft visual studio\vc98\include\stdlib.h(233) : error C2501: '_wenviron' : missing storage-class or type specifiers
+c:\program files\microsoft visual studio\vc98\include\stdlib.h(239) : error C2143: syntax error : missing ';' before '*'
+c:\program files\microsoft visual studio\vc98\include\stdlib.h(239) : error C2501: '_wpgmptr' : missing storage-class or type specifiers
+c:\program files\microsoft visual studio\vc98\include\stdlib.h(301) : error C2059: syntax error : ','
+c:\program files\microsoft visual studio\vc98\include\stdlib.h(302) : error C2059: syntax error : ','
+c:\program files\microsoft visual studio\vc98\include\stdlib.h(319) : error C2061: syntax error : identifier 'wchar_t'
+c:\program files\microsoft visual studio\vc98\include\stdlib.h(320) : error C2143: syntax error : missing ',' before '*'
+c:\program files\microsoft visual studio\vc98\include\stdlib.h(320) : error C2059: syntax error : '*'
+c:\program files\microsoft visual studio\vc98\include\stdlib.h(328) : error C2143: syntax error : missing ';' before '*'
+c:\program files\microsoft visual studio\vc98\include\stdlib.h(328) : error C2501: 'wchar_t' : missing storage-class or type specifiers
+c:\program files\microsoft visual studio\vc98\include\stdlib.h(328) : error C2061: syntax error : identifier 'wchar_t'
+c:\program files\microsoft visual studio\vc98\include\stdlib.h(328) : error C2501: '_itow' : missing storage-class or type specifiers
+c:\program files\microsoft visual studio\vc98\include\stdlib.h(329) : error C2143: syntax error : missing ';' before '*'
+c:\program files\microsoft visual studio\vc98\include\stdlib.h(329) : error C2501: 'wchar_t' : missing storage-class or type specifiers
+c:\program files\microsoft visual studio\vc98\include\stdlib.h(329) : error C2086: 'wchar_t' : redefinition
+c:\program files\microsoft visual studio\vc98\include\stdlib.h(329) : error C2061: syntax error : identifier 'wchar_t'
+c:\program files\microsoft visual studio\vc98\include\stdlib.h(329) : error C2501: '_ltow' : missing storage-class or type specifiers
+c:\program files\microsoft visual studio\vc98\include\stdlib.h(330) : error C2143: syntax error : missing ';' before '*'
+c:\program files\microsoft visual studio\vc98\include\stdlib.h(330) : error C2501: 'wchar_t' : missing storage-class or type specifiers
+c:\program files\microsoft visual studio\vc98\include\stdlib.h(330) : error C2086: 'wchar_t' : redefinition
+c:\program files\microsoft visual studio\vc98\include\stdlib.h(330) : error C2061: syntax error : identifier 'wchar_t'
+c:\program files\microsoft visual studio\vc98\include\stdlib.h(330) : error C2501: '_ultow' : missing storage-class or type specifiers
+c:\program files\microsoft visual studio\vc98\include\stdlib.h(331) : error C2143: syntax error : missing ',' before '*'
+c:\program files\microsoft visual studio\vc98\include\stdlib.h(331) : error C2059: syntax error : '*'
+c:\program files\microsoft visual studio\vc98\include\stdlib.h(332) : error C2143: syntax error : missing ',' before '*'
+c:\program files\microsoft visual studio\vc98\include\stdlib.h(332) : error C2059: syntax error : '*'
+c:\program files\microsoft visual studio\vc98\include\stdlib.h(333) : error C2143: syntax error : missing ',' before '*'
+c:\program files\microsoft visual studio\vc98\include\stdlib.h(333) : error C2059: syntax error : '*'
+c:\program files\microsoft visual studio\vc98\include\stdlib.h(334) : error C2143: syntax error : missing ';' before '*'
+c:\program files\microsoft visual studio\vc98\include\stdlib.h(334) : error C2501: 'wchar_t' : missing storage-class or type specifiers
+c:\program files\microsoft visual studio\vc98\include\stdlib.h(334) : error C2086: 'wchar_t' : redefinition
+c:\program files\microsoft visual studio\vc98\include\stdlib.h(334) : error C2143: syntax error : missing ',' before '*'
+c:\program files\microsoft visual studio\vc98\include\stdlib.h(334) : error C2059: syntax error : '*'
+c:\program files\microsoft visual studio\vc98\include\stdlib.h(334) : error C2501: '_wgetenv' : missing storage-class or type specifiers
+c:\program files\microsoft visual studio\vc98\include\stdlib.h(335) : error C2143: syntax error : missing ',' before '*'
+c:\program files\microsoft visual studio\vc98\include\stdlib.h(335) : error C2059: syntax error : '*'
+c:\program files\microsoft visual studio\vc98\include\stdlib.h(336) : error C2143: syntax error : missing ',' before '*'
+c:\program files\microsoft visual studio\vc98\include\stdlib.h(336) : error C2059: syntax error : '*'
+c:\program files\microsoft visual studio\vc98\include\stdlib.h(337) : error C2143: syntax error : missing ',' before '*'
+c:\program files\microsoft visual studio\vc98\include\stdlib.h(337) : error C2059: syntax error : '*'
+c:\program files\microsoft visual studio\vc98\include\stdlib.h(339) : error C2143: syntax error : missing ';' before '*'
+c:\program files\microsoft visual studio\vc98\include\stdlib.h(339) : error C2501: 'wchar_t' : missing storage-class or type specifiers
+c:\program files\microsoft visual studio\vc98\include\stdlib.h(339) : error C2086: 'wchar_t' : redefinition
+c:\program files\microsoft visual studio\vc98\include\stdlib.h(339) : error C2061: syntax error : identifier 'wchar_t'
+c:\program files\microsoft visual studio\vc98\include\stdlib.h(339) : error C2501: '_i64tow' : missing storage-class or type specifiers
+c:\program files\microsoft visual studio\vc98\include\stdlib.h(340) : error C2143: syntax error : missing ';' before '*'
+c:\program files\microsoft visual studio\vc98\include\stdlib.h(340) : error C2501: 'wchar_t' : missing storage-class or type specifiers
+c:\program files\microsoft visual studio\vc98\include\stdlib.h(340) : error C2086: 'wchar_t' : redefinition
+c:\program files\microsoft visual studio\vc98\include\stdlib.h(340) : error C2061: syntax error : identifier 'wchar_t'
+c:\program files\microsoft visual studio\vc98\include\stdlib.h(340) : error C2501: '_ui64tow' : missing storage-class or type specifiers
+c:\program files\microsoft visual studio\vc98\include\stdlib.h(341) : error C2143: syntax error : missing ',' before '*'
+c:\program files\microsoft visual studio\vc98\include\stdlib.h(341) : error C2059: syntax error : '*'
+c:\program files\microsoft visual studio\vc98\include\stdlib.h(382) : error C2143: syntax error : missing ';' before '*'
+c:\program files\microsoft visual studio\vc98\include\stdlib.h(382) : error C2501: 'wchar_t' : missing storage-class or type specifiers
+c:\program files\microsoft visual studio\vc98\include\stdlib.h(382) : error C2086: 'wchar_t' : redefinition
+c:\program files\microsoft visual studio\vc98\include\stdlib.h(382) : error C2061: syntax error : identifier 'wchar_t'
+c:\program files\microsoft visual studio\vc98\include\stdlib.h(382) : error C2501: '_wfullpath' : missing storage-class or type specifiers
+c:\program files\microsoft visual studio\vc98\include\stdlib.h(383) : error C2059: syntax error : ','
+c:\program files\microsoft visual studio\vc98\include\stdlib.h(385) : error C2143: syntax error : missing ',' before '*'
+c:\program files\microsoft visual studio\vc98\include\stdlib.h(385) : error C2059: syntax error : '*'
+c:\program files\microsoft visual studio\vc98\include\stdlib.h(386) : error C2143: syntax error : missing ',' before '*'
+c:\program files\microsoft visual studio\vc98\include\stdlib.h(386) : error C2059: syntax error : '*'
+c:\program files\microsoft visual studio\vc98\include\stdlib.h(387) : error C2143: syntax error : missing ',' before '*'
+c:\program files\microsoft visual studio\vc98\include\stdlib.h(387) : error C2059: syntax error : '*'
+c:\program files\microsoft visual studio\vc98\include\stdlib.h(388) : error C2143: syntax error : missing ',' before '*'
+c:\program files\microsoft visual studio\vc98\include\stdlib.h(388) : error C2059: syntax error : '*'
+c:\program files\microsoft visual studio\vc98\include\string.h(181) : error C2143: syntax error : missing ';' before '*'
+c:\program files\microsoft visual studio\vc98\include\string.h(181) : error C2501: 'wchar_t' : missing storage-class or type specifiers
+c:\program files\microsoft visual studio\vc98\include\string.h(181) : error C2086: 'wchar_t' : redefinition
+c:\program files\microsoft visual studio\vc98\include\string.h(181) : error C2061: syntax error : identifier 'wchar_t'
+c:\program files\microsoft visual studio\vc98\include\string.h(181) : error C2501: 'wcscat' : missing storage-class or type specifiers
+c:\program files\microsoft visual studio\vc98\include\string.h(182) : error C2143: syntax error : missing ';' before '*'
+c:\program files\microsoft visual studio\vc98\include\string.h(182) : error C2501: 'wchar_t' : missing storage-class or type specifiers
+c:\program files\microsoft visual studio\vc98\include\string.h(182) : error C2086: 'wchar_t' : redefinition
+c:\program files\microsoft visual studio\vc98\include\string.h(182) : error C2143: syntax error : missing ',' before '*'
+c:\program files\microsoft visual studio\vc98\include\string.h(182) : error C2059: syntax error : '*'
+c:\program files\microsoft visual studio\vc98\include\string.h(182) : error C2501: 'wcschr' : missing storage-class or type specifiers
+c:\program files\microsoft visual studio\vc98\include\string.h(183) : error C2143: syntax error : missing ',' before '*'
+c:\program files\microsoft visual studio\vc98\include\string.h(183) : error C2059: syntax error : '*'
+c:\program files\microsoft visual studio\vc98\include\string.h(184) : error C2143: syntax error : missing ';' before '*'
+c:\program files\microsoft visual studio\vc98\include\string.h(184) : error C2501: 'wchar_t' : missing storage-class or type specifiers
+c:\program files\microsoft visual studio\vc98\include\string.h(184) : error C2086: 'wchar_t' : redefinition
+c:\program files\microsoft visual studio\vc98\include\string.h(184) : error C2061: syntax error : identifier 'wchar_t'
+c:\program files\microsoft visual studio\vc98\include\string.h(184) : error C2501: 'wcscpy' : missing storage-class or type specifiers
+c:\program files\microsoft visual studio\vc98\include\string.h(185) : error C2143: syntax error : missing ',' before '*'
+c:\program files\microsoft visual studio\vc98\include\string.h(185) : error C2059: syntax error : '*'
+c:\program files\microsoft visual studio\vc98\include\string.h(186) : error C2143: syntax error : missing ',' before '*'
+c:\program files\microsoft visual studio\vc98\include\string.h(186) : error C2059: syntax error : '*'
+c:\program files\microsoft visual studio\vc98\include\string.h(187) : error C2143: syntax error : missing ';' before '*'
+c:\program files\microsoft visual studio\vc98\include\string.h(187) : error C2501: 'wchar_t' : missing storage-class or type specifiers
+c:\program files\microsoft visual studio\vc98\include\string.h(187) : error C2086: 'wchar_t' : redefinition
+c:\program files\microsoft visual studio\vc98\include\string.h(187) : error C2061: syntax error : identifier 'wchar_t'
+c:\program files\microsoft visual studio\vc98\include\string.h(187) : error C2501: 'wcsncat' : missing storage-class or type specifiers
+c:\program files\microsoft visual studio\vc98\include\string.h(188) : error C2143: syntax error : missing ',' before '*'
+c:\program files\microsoft visual studio\vc98\include\string.h(188) : error C2059: syntax error : '*'
+c:\program files\microsoft visual studio\vc98\include\string.h(188) : fatal error C1003: error count exceeds 100; stopping compilation
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+64bitDES.exe - 102 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
