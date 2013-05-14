@@ -1,4 +1,4 @@
-university
+University
 ==========
 
 Since 2006-2011 Developed by YM,Jung
