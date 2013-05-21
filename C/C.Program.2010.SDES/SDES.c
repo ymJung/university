@@ -19,6 +19,7 @@ int main(void) {
 	unsigned char p,k,c;
 	int state,s;
 	FILE *fi,*fo; //파일포인터
+	printf("암호화 할 평문 또는 암호문을 input.txt 파일로 만들어 작성하세요\n");
 	printf("수행할 작업을 선택하세요(1:암호화 2: 복호화 3:종료) : ");
 	scanf("%d",&s);
 	if(s!=1 && s!=2 ) return 1; //1도2도 아니면 종료
